@@ -1,11 +1,11 @@
 <template>
   <!-- Component: Notice Card with Image -->
-  <!-- <RegistrationForm/> -->
-  <!-- <EventCard :event="event" /> -->
-  <!-- <EventCard :event="event" /> -->
-  <!-- <NoticeCard :notice="notice" /> -->
-_
-
+  <RegistrationForm/>
+  <EventCard :event="event" />
+  <EventCard :event="event" />
+  <NoticeCard :notice="notice" />
+  <Dropdown/>
+  
 </template>
 
 <script>
@@ -19,6 +19,7 @@ import eventImage1 from "@/assets/images/event-1.webp"
 import eventImage2 from "@/assets/images/event-1.webp"
 import eventImage3 from "@/assets/images/event-1.webp"
 import RegistrationForm from '@/components/forms/RegistrationForm.vue'
+import Dropdown from '@/components/dropdowns/Dropdown.vue'
 
 
 
@@ -29,6 +30,7 @@ export default {
     NoticeCard,
     EventCard,
     RegistrationForm,
+    Dropdown,
   },
   data: function () {
     return {
