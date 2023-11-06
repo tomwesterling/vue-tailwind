@@ -1,9 +1,10 @@
 <template>
   <!-- Component: Notice Card with Image -->
-  <NoticeCard :notice="notice" />
-  <EventCard :event="event" />
-  <EventCard :event="event" />
-
+  <!-- <RegistrationForm/> -->
+  <!-- <EventCard :event="event" /> -->
+  <!-- <EventCard :event="event" /> -->
+  <!-- <NoticeCard :notice="notice" /> -->
+_
 
 </template>
 
@@ -17,6 +18,7 @@ import EventCard from '@/components/cards/EventCard.vue'
 import eventImage1 from "@/assets/images/event-1.webp"
 import eventImage2 from "@/assets/images/event-1.webp"
 import eventImage3 from "@/assets/images/event-1.webp"
+import RegistrationForm from '@/components/forms/RegistrationForm.vue'
 
 
 
@@ -25,7 +27,8 @@ export default {
     ButtonPrimary,
     ButtonPrimaryOutlined,
     NoticeCard,
-    EventCard
+    EventCard,
+    RegistrationForm,
   },
   data: function () {
     return {

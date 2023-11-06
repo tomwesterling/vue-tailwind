@@ -11,8 +11,8 @@
       <img :src="event.image3" alt="" class="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32" loading="lazy">
     </div>
     <dl class="mt-4 text-xs font-medium flex items-center row-start-2 sm:mt-1 sm:row-start-3 md:mt-2.5 lg:row-start-2">
-      <dt class="sr-only">Reviews</dt>
-      <dd class="text-indigo-600 flex items-center dark:text-indigo-400">
+      <dt class="sr-only">Datum und Uhrzeit</dt>
+      <dd class="flex items-center dark:text-indigo-400">
         <svg width="24" height="24" fill="none" aria-hidden="true" class="mr-1 stroke-yellow">
           <path d="m12 5 2 5h5l-4 4 2.103 5L12 16l-5.103 3L9 14l-4-4h5l2-5Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
