@@ -1,5 +1,6 @@
 <template>
   <Header/>
+  
   <router-view/>
   <Footer/>
 </template>
@@ -52,3 +53,4 @@ input {
   background: transparent;
 }
 </style>
+

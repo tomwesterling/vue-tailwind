@@ -1,5 +1,5 @@
 <template>
-    <header class="flex px-4 flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
+<header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
   <nav class="bg-gray-100 mt-6 relative max-w-8xl w-full border border-gray-200 rounded-xl mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto" aria-label="Global">
     <div class="flex items-center justify-between">
       <a class="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand">
@@ -18,10 +18,10 @@
     </div>
     <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
       <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7">
-        <a class="font-medium text-yellow md:py-6 dark:text-yellow" href="#" aria-current="page">Landing</a>
-        <a class="font-medium text-gray-800 hover:text-white md:py-6" href="#">Account</a>
-        <a class="font-medium  text-gray-800 hover:text-white md:py-6" href="#">Work</a>
-        <a class="font-medium  text-gray-800 hover:text-white md:py-6" href="#">Blog</a>
+        <router-link class="font-medium  text-gray-900 hover:text-white md:py-6" to="/"  :class="{ 'text-yellow' : $route.path === '/' }">Home</router-link>
+        <router-link class="font-medium  text-gray-900 hover:text-white md:py-6" to="/events" :class="{ 'text-yellow' : $route.path === '/events' }">Events</router-link>
+        <router-link class="font-medium  text-gray-900 hover:text-white md:py-6" to="/shop" :class="{ 'text-yellow' : $route.path === '/shop' }">Shop</router-link>
+        <router-link class="font-medium  text-gray-900 hover:text-white md:py-6" to="/contact" :class="{ 'text-yellow' : $route.path === '/contact' }">Kontakt</router-link>
 
         <div class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--trigger:hover] md:py-4">
           <button type="button" class="flex items-center w-full text-gray-800 hover:text-whitefont-medium ">
